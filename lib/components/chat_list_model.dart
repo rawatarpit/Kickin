@@ -1,0 +1,120 @@
+import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import 'chat_list_widget.dart' show ChatListWidget;
+import 'package:flutter/material.dart';
+import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
+
+class ChatListModel extends FlutterFlowModel<ChatListWidget> {
+  ///  Local state fields for this component.
+
+  List<String> addedusers = [];
+  void addToAddedusers(String item) => addedusers.add(item);
+  void removeFromAddedusers(String item) => addedusers.remove(item);
+  void removeAtIndexFromAddedusers(int index) => addedusers.removeAt(index);
+  void insertAtIndexInAddedusers(int index, String item) =>
+      addedusers.insert(index, item);
+  void updateAddedusersAtIndex(int index, Function(String) updateFn) =>
+      addedusers[index] = updateFn(addedusers[index]);
+
+  ///  State fields for stateful widgets in this component.
+
+  // State field(s) for TabBar widget.
+  TabController? tabBarController;
+  int get tabBarCurrentIndex =>
+      tabBarController != null ? tabBarController!.index : 0;
+  int get tabBarPreviousIndex =>
+      tabBarController != null ? tabBarController!.previousIndex : 0;
+
+  // State field(s) for ListView widget.
+
+  PagingController<DocumentSnapshot?, UsersRecord>? listViewPagingController1;
+  Query? listViewPagingQuery1;
+  List<StreamSubscription?> listViewStreamSubscriptions1 = [];
+
+  // State field(s) for ListView widget.
+
+  PagingController<DocumentSnapshot?, UsersRecord>? listViewPagingController2;
+  Query? listViewPagingQuery2;
+  List<StreamSubscription?> listViewStreamSubscriptions2 = [];
+
+  // State field(s) for Checkbox widget.
+  Map<UsersRecord, bool> checkboxValueMap = {};
+  List<UsersRecord> get checkboxCheckedItems =>
+      checkboxValueMap.entries.where((e) => e.value).map((e) => e.key).toList();
+
+  @override
+  void initState(BuildContext context) {}
+
+  @override
+  void dispose() {
+    tabBarController?.dispose();
+    listViewStreamSubscriptions1.forEach((s) => s?.cancel());
+    listViewPagingController1?.dispose();
+
+    listViewStreamSubscriptions2.forEach((s) => s?.cancel());
+    listViewPagingController2?.dispose();
+  }
+
+  /// Additional helper methods.
+  PagingController<DocumentSnapshot?, UsersRecord> setListViewController1(
+    Query query, {
+    DocumentReference<Object?>? parent,
+  }) {
+    listViewPagingController1 ??= _createListViewController1(query, parent);
+    if (listViewPagingQuery1 != query) {
+      listViewPagingQuery1 = query;
+      listViewPagingController1?.refresh();
+    }
+    return listViewPagingController1!;
+  }
+
+  PagingController<DocumentSnapshot?, UsersRecord> _createListViewController1(
+    Query query,
+    DocumentReference<Object?>? parent,
+  ) {
+    final controller =
+        PagingController<DocumentSnapshot?, UsersRecord>(firstPageKey: null);
+    return controller
+      ..addPageRequestListener(
+        (nextPageMarker) => queryUsersRecordPage(
+          queryBuilder: (_) => listViewPagingQuery1 ??= query,
+          nextPageMarker: nextPageMarker,
+          streamSubscriptions: listViewStreamSubscriptions1,
+          controller: controller,
+          pageSize: 15,
+          isStream: true,
+        ),
+      );
+  }
+
+  PagingController<DocumentSnapshot?, UsersRecord> setListViewController2(
+    Query query, {
+    DocumentReference<Object?>? parent,
+  }) {
+    listViewPagingController2 ??= _createListViewController2(query, parent);
+    if (listViewPagingQuery2 != query) {
+      listViewPagingQuery2 = query;
+      listViewPagingController2?.refresh();
+    }
+    return listViewPagingController2!;
+  }
+
+  PagingController<DocumentSnapshot?, UsersRecord> _createListViewController2(
+    Query query,
+    DocumentReference<Object?>? parent,
+  ) {
+    final controller =
+        PagingController<DocumentSnapshot?, UsersRecord>(firstPageKey: null);
+    return controller
+      ..addPageRequestListener(
+        (nextPageMarker) => queryUsersRecordPage(
+          queryBuilder: (_) => listViewPagingQuery2 ??= query,
+          nextPageMarker: nextPageMarker,
+          streamSubscriptions: listViewStreamSubscriptions2,
+          controller: controller,
+          pageSize: 15,
+          isStream: true,
+        ),
+      );
+  }
+}

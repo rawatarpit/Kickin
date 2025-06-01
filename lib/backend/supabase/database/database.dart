@@ -1,0 +1,35 @@
+export '../../../flutter_flow/lat_lng.dart';
+export 'package:supabase_flutter/supabase_flutter.dart' hide Provider;
+
+export '../supabase.dart';
+export 'row.dart';
+export 'table.dart';
+
+export 'tables/payments.dart';
+export 'tables/tournaments.dart';
+export 'tables/spatial_ref_sys.dart';
+export 'tables/kickin_ads.dart';
+export 'tables/ktm_matches.dart';
+export 'tables/subscriptions.dart';
+export 'tables/geometry_columns.dart';
+export 'tables/jobs.dart';
+export 'tables/ktm_group_standings.dart';
+export 'tables/connections.dart';
+export 'tables/achievements.dart';
+export 'tables/loser_bracket.dart';
+export 'tables/phonepe_access_tokens.dart';
+export 'tables/sponsors.dart';
+export 'tables/geography_columns.dart';
+export 'tables/ktm_team_invitations.dart';
+export 'tables/tournament_media.dart';
+export 'tables/job_applications.dart';
+export 'tables/registered_players.dart';
+export 'tables/fixtures.dart';
+export 'tables/ktm_groups.dart';
+export 'tables/top8_players.dart';
+export 'tables/user_experience.dart';
+export 'tables/ktm_teams.dart';
+export 'tables/ktm_team_members.dart';
+export 'tables/users.dart';
+export 'tables/ktm_group_teams.dart';
+export 'tables/notifications.dart';
