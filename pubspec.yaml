@@ -1,0 +1,49 @@
+name: kickin
+description: Kickin – community-driven football network
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+  # Firebase (Auth + Firestore + Core)
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.0
+  firebase_messaging: ^15.1.0
+
+  # Supabase (source of truth)
+  supabase_flutter: ^2.5.6
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  image_picker: ^1.0.7
+  http: ^1.2.0
+  share_plus: ^7.2.2
+  video_player: ^2.9.1
+  device_info_plus: ^12.3.0
+  flutter_riverpod: ^3.2.1
+  firebase_analytics: ^11.6.0
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/

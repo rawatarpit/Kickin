@@ -1,0 +1,3 @@
+flutter run -d chrome \
+  --dart-define=SUPABASE_URL=https://pqcwgkqrblugplpcaxcy.supabase.co \
+  --dart-define=SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxY3dna3FyYmx1Z3BscGNheGN5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA5NTcyNjMsImV4cCI6MjA3NjUzMzI2M30.ZinAUiNwFeNM56jSJcB3NcTJrK_EnPJSGOY-g5fgPnw

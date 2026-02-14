@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "771445747812",
+    "project_id": "kickin-9s7gfx",
+    "storage_bucket": "kickin-9s7gfx.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771445747812:android:7f6e5dea2e0a577b22ef71",
+        "android_client_info": {
+          "package_name": "com.example.kickin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771445747812-9nn8jp2cl2gbidenjpk32bdmgeaaqk1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9WXShp7U5Kk_V9hQZRGdDtx9VEpxOBOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771445747812-9nn8jp2cl2gbidenjpk32bdmgeaaqk1f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771445747812-7hdn9ccgvivodo8ma2j3mtmp0a6htepc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.kickinpartenalconsent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771445747812:android:1d1550f6b049dd4e22ef71",
+        "android_client_info": {
+          "package_name": "com.mycompany.kickin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771445747812-4b208m8nj0u12a5vv8a1t80eo3lr0gng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.kickin",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "771445747812-9nn8jp2cl2gbidenjpk32bdmgeaaqk1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9WXShp7U5Kk_V9hQZRGdDtx9VEpxOBOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771445747812-9nn8jp2cl2gbidenjpk32bdmgeaaqk1f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771445747812-7hdn9ccgvivodo8ma2j3mtmp0a6htepc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.kickinpartenalconsent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771445747812:android:be97a00b4897f9d422ef71",
+        "android_client_info": {
+          "package_name": "com.mycompany.kickinpartenalconsent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771445747812-9gbg45gnao2k8gsm95llsr1dblp4u2ar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.kickinpartenalconsent",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "771445747812-9nn8jp2cl2gbidenjpk32bdmgeaaqk1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9WXShp7U5Kk_V9hQZRGdDtx9VEpxOBOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771445747812-9nn8jp2cl2gbidenjpk32bdmgeaaqk1f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771445747812-7hdn9ccgvivodo8ma2j3mtmp0a6htepc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.kickinpartenalconsent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
